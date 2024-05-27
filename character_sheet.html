@@ -101,14 +101,14 @@ Example Button<button type="roll" name="roll_exampleroll1" value="/roll floor(([
 <script type="text/worker">
 	<!-- Stamina (max) Section -->
 	on(
-	"change:attr_vitality change:attr_might_modifier change:attr_mastery sheet:opened",
+	"change:vitality change:might_modifier change:mastery sheet:opened",
 	function (eventInfo) {
 		getAttrs(
-			["attr_vitality", "attr_might_modifier", "attr_mastery"],
+			["vitality", "might_modifier", "mastery"],
 			function (values) {
-				const vitality = parseInt(values.attr_vitality, 10);
-				const mightModifier = parseInt(values.attr_might_modifier, 10);
-				const mastery = parseInt(values.attr_mastery, 10);
+				const vitality = parseInt(values.vitality, 10);
+				const mightModifier = parseInt(values.might_modifier, 10);
+				const mastery = parseInt(values.mastery, 10);
 
 				if (!isNaN(vitality) && !isNaN(mightModifier) && !isNaN(mastery)) {
 					const staminaMax = 2 * vitality + mightModifier + mastery;
