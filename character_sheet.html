@@ -74,7 +74,7 @@ Example Button<button type="roll" name="roll_exampleroll1" value="/roll floor(([
   <!-- Stamina (max) Section -->
   <div class="sheet-section">
 	<label class="sheet-label" for="stamina_max">Stamina (max):</label>
-	<input type="text" name="attr_stamina_max" class="sheet-input" readonly>
+	<input type="number" name="attr_stamina_max" class="sheet-input" readonly>
   </div>
   
 </div>
@@ -113,11 +113,11 @@ Example Button<button type="roll" name="roll_exampleroll1" value="/roll floor(([
 				if (!isNaN(vitality) && !isNaN(mightModifier) && !isNaN(mastery)) {
 					const staminaMax = 2 * vitality + mightModifier + mastery;
 					setAttrs({
-						attr_stamina_max: staminaMax,
+						stamina_max: staminaMax,
 					});
 				} else {
 					setAttrs({
-						attr_stamina_max: "",
+						stamina_max: "",
 					});
 				}
 			}
