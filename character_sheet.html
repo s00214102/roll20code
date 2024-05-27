@@ -1,0 +1,99 @@
+Example Button<button type="roll" name="roll_exampleroll1" value="/roll floor(([[3+?{DiceMod|0}]]d10+?{SumMod|0}-?{Target|15})/5 +1) " ></button>
+
+<!-- Character Sheet Template -->
+<div class="sheet-container">
+
+  <!-- Name -->
+  <div class="sheet-section">
+    <label class="sheet-label" for="name">Name:</label>
+    <input type="text" name="attr_name" class="sheet-input">
+  </div>
+
+  <!-- Species -->
+  <div class="sheet-section">
+    <label class="sheet-label" for="species">Species:</label> 	
+    <input name="attr_species" type="text" class="sheet-select">
+  </div>
+
+    <!-- Type -->
+	<div class="sheet-section">
+		<label class="sheet-label" for="type">Type:</label>
+		<input name="attr_type" type="text" class="sheet-select">
+	</div>
+
+	<!-- Shape -->
+	<div class="sheet-section">
+		<label class="sheet-label" for="shape">Shape:</label>
+		<input name="attr_shape" type="text" class="sheet-select">
+	</div> 
+
+	<!-- Weight -->
+	<div class="sheet-section">
+		<label class="sheet-label" for="weight">Weight:</label>
+		<input name="attr_weight" type="text" class="sheet-select">
+	</div> 
+
+  <!-- Speed -->
+  <div class="sheet-section">
+    <label class="sheet-label" for="speed">Speed:</label>
+    <input type="number" name="attr_speed" class="sheet-input">
+    <span class="sheet-unit">m</span>
+  </div>
+
+	<!-- Range -->
+	<div class="sheet-section">
+		<label class="sheet-label" for="range">Range:</label>
+		<input type="number" name="attr_range" class="sheet-input">
+		<span class="sheet-unit">m</span>
+	</div>
+
+  <!-- Unarmed Damage -->
+  <div class="sheet-section">
+    <label class="sheet-label" for="unarmed_damage">Unarmed Damage:</label>
+    <input type="text" name="attr_unarmed_damage" class="sheet-input">
+  </div>
+
+  <!-- Vitality Section -->
+<div class="sheet-section">
+	<label class="sheet-label" for="vitality">Vitality:</label>
+	<input type="number" name="attr_vitality" class="sheet-input">
+  </div>
+  
+  <!-- Might Modifier Section -->
+  <div class="sheet-section">
+	<label class="sheet-label" for="might_modifier">Might Modifier:</label>
+	<input type="number" name="attr_might_modifier" class="sheet-input">
+  </div>
+  
+  <!-- Mastery Section -->
+  <div class="sheet-section">
+	<label class="sheet-label" for="mastery">Mastery:</label>
+	<input type="number" name="attr_mastery" class="sheet-input">
+  </div>
+  
+  <!-- Stamina (max) Section -->
+  <div class="sheet-section">
+	<label class="sheet-label" for="stamina_max">Stamina (max):</label>
+	<input type="number" name="attr_stamina_max" class="sheet-input" readonly>
+  </div>
+  
+</div>
+
+<style>
+  .sheet-container {
+    font-family: Arial, sans-serif;
+  }
+  .sheet-section {
+    margin-bottom: 10px;
+  }
+  .sheet-label {
+    display: inline-block;
+    width: 100px;
+  }
+  .sheet-input, .sheet-select {
+    width: 200px;
+  }
+  .sheet-unit {
+    margin-left: 5px;
+  }
+</style>
